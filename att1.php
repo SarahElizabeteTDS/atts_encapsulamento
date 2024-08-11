@@ -66,7 +66,7 @@ function pedirDados($var)
     $var->setModelo(readline("Informe o modelo do veículo: \n"));
     $var->setMarca(readline("Informe a marca do veículo: \n"));
     $var->setAnoFab(readline("Informe o ano de fabricacao do veículo: \n"));
-    $var->setVeloMax(readline("Informe a velocidade máxima do veículo: \n"));
+    $var->setVeloMax(readline("Informe a velocidade máxima do veículo: \n\n"));
 }
 
 function dadosRapido($var)
