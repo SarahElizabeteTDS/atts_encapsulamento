@@ -6,6 +6,12 @@ class Veiculos
     private $capacidade;
     private $passagensVendidas;
 
+    //construct
+    public function __construct($cap)
+    {
+        $this->capacidade = $cap;
+    }
+
     //metodos
     public function capacidadeVeiculo()
     {
@@ -50,8 +56,7 @@ class Veiculos
 
 //programa principal
 
-$veiculo = new Veiculos;
-$veiculo->setCapacidade(readline("Qual a capacidade do carro? \n"));
+$veiculo = new Veiculos(readline("Qual a capacidade do carro? \n"));
 $quantidade = readline("Quantas passagens você deseja comprar?\n");
 if ($quantidade <= 0) 
 {
