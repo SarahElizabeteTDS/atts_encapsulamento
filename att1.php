@@ -77,12 +77,12 @@ function pedirDados($var)
 
 function dadosRapido($var)
 {
-    print "O carro mais rápido é: " . $var->__toString();
+    print "O carro mais rápido é: " . $var;
 }
 
 function dadosLento($var)
 {
-    print "O carro mais lento é: ". $var->__toString(); 
+    print "O carro mais lento é: ". $var; 
 }
 
 $carro0 = new Carros;
