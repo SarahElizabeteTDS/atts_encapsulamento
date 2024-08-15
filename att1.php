@@ -8,6 +8,12 @@ class Carros
     private $anoFab;
     private $veloMax;
 
+    //metodos
+    public function __toString()
+    {
+        return $this->modelo . "-" . $this->marca . ", fabricado em ". $this->anoFab .", com velocidade máxima de " . $this->veloMax . "km/h.\n";
+    }
+
     //gets e sets
     
     public function getModelo()
@@ -71,12 +77,12 @@ function pedirDados($var)
 
 function dadosRapido($var)
 {
-    print "O carro mais rápido é: ". $var->getModelo() . "-" . $var->getMarca() . ", fabricado em ". $var->getAnoFab() .", com velocidade máxima de " . $var->getVeloMax() . "km/h.\n";
+    print "O carro mais rápido é: " . $var->__toString();
 }
 
 function dadosLento($var)
 {
-    print "O carro mais lento é: ". $var->getModelo() . "-" . $var->getMarca() . ", fabricado em ". $var->getAnoFab() .", com velocidade máxima de " . $var->getVeloMax() . "km/h.\n"; 
+    print "O carro mais lento é: ". $var->__toString(); 
 }
 
 $carro0 = new Carros;
