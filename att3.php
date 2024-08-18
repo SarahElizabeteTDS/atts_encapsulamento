@@ -10,6 +10,7 @@ class Veiculos
     public function __construct($cap)
     {
         $this->capacidade = $cap;
+        $this->passagensVendidas = 0;   
     }
 
     //metodos
